@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+
+
+vector<int> divi;
+int root=sqrt(n);
+  for (int i=1; i<=root; i++)
+    {
+        if (n%i == 0)
+        {
+            if (n/i == i)divi.pb(i);
+            else
+            {
+              divi.pb(i);
+              divi.pb(n/i);
+            }
+        }
+    }
+
+
+]]></content>
+
+	
+	<tabTrigger>divisor</tabTrigger> 
+	
+	
+</snippet>

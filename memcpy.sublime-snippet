@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+  
+
+  int temp[n];
+  memcpy(temp, arr, n*sizeof(int));
+
+  
+]]></content>
+
+	 <tabTrigger>memcpy</tabTrigger> 
+	
+	
+</snippet>

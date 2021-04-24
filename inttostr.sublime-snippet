@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+	
+
+	stringstream tapatap;
+	tapatap<<(interger_name);
+	string s=tapatap.str();
+
+	
+]]></content>
+	 <tabTrigger>inttostr</tabTrigger> 
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+
+
+bool comp(pair<string,int>x,pair<string,int>y)
+{
+//true -- change
+//fasle -- no change
+
+	if(x.first>y.first) return true;
+	else if(x.first==y.first) return true;
+	else return false;
+}
+
+
+]]></content>
+	
+	 <tabTrigger>comp</tabTrigger> 
+
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+
+
+	stringstream geek(str);
+	int intr;
+	geek >> intr;
+
+
+]]></content>
+
+ <tabTrigger>strtoint</tabTrigger> 
+
+</snippet>

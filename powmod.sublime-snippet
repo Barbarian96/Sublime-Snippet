@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+int powmod(int x,int n,int M)
+{
+                                    //This pro is (x^n)%m
+    if(n==0)
+        return 1;
+    else if(n%2 == 0)   
+        return powmod((x*x)%M,n/2,M);
+    else                        
+        return (x*powmod((x*x)%M,(n-1)/2,M))%M;
+
+}
+]]></content>
+
+	
+	<tabTrigger>powmod</tabTrigger> 
+	
+	
+</snippet>

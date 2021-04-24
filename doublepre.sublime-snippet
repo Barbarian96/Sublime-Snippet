@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+
+
+bool doublepre(double a,double b)
+{
+//#define EPS 1e-10;
+return (abs(a-b)<EPS);
+}
+
+
+]]></content>
+	
+	 <tabTrigger>doublepre</tabTrigger> 
+
+</snippet>

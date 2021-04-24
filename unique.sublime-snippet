@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+
+
+vector<int>::iterator ip;
+ip = unique(data.begin(),data.end());
+data.resize(distance(data.begin(), ip));
+cout<<data.size()<<endl;
+
+
+
+]]></content>
+	
+	 <tabTrigger>unique</tabTrigger> 
+
+</snippet>

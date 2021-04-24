@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+	
+
+	stringstream stream(str);
+	string intermediate;
+	while(getline(stream, intermediate, ' '))
+	{
+		cout<<intermediate<<endl;
+	}
+
+
+]]></content>
+
+	<tabTrigger>token</tabTrigger> 
+	
+</snippet>

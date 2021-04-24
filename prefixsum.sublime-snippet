@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+
+
+
+///Sum Between Index a to b
+///arr[b]-arr[a-1];
+int prefixsum[n];
+for(i=0;i<n;i++)
+{
+prefixsum[0]=arr[0];
+if(i!=0)
+{
+prefixsum[i]=prefixsum[i-1]+arr[i];
+}
+}
+
+
+
+
+]]></content>
+	
+	 <tabTrigger>prefixsum</tabTrigger> 
+
+</snippet>
