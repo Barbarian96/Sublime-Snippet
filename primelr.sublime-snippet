@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+  
+
+vector<bool> segmentedSieveNoPreGen(long long L, long long R)
+{
+
+//find prime form l to r by assigning value 0 or 1 
+/*
+//This is for main function
+vector<bool>data;
+data=segmentedSieveNoPreGen(2,11);
+for(auto x:data) cout<<x<<dl;
+*/
+
+    vector<bool> isPrime(R - L + 1, true);
+    long long lim = sqrt(R);
+    for (long long i = 2; i <= lim; ++i)
+        for (long long j = max(i * i, (L + i - 1) / i * i); j <= R; j += i)
+            isPrime[j - L] = false;
+    if (L == 1)
+        isPrime[0] = false;
+    return isPrime;
+}
+  
+]]></content>
+
+	 <tabTrigger>primelr</tabTrigger> 
+	
+	
+</snippet>
