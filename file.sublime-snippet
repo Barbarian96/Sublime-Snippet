@@ -3,8 +3,8 @@
 
 
 
-freopen("input.txt", "r", stdin);
-freopen("output.txt", "w", stdout);
+freopen("/home/mozahed/Documents/Love/input.txt", "r", stdin);
+freopen("/home/mozahed/Documents/Love/output.txt", "w", stdout);
 
 
 

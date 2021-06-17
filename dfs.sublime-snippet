@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+bool color[max];
+void dfs(int v)
+{
+    color[v]=1;
+    //cout<<v<< "->";
+    for(auto child:adj[v])
+        if(color[child]==0)
+            dfs(child);
+}
+]]></content>
+  <tabTrigger>dfs</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

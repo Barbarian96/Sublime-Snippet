@@ -1,0 +1,32 @@
+<snippet>
+  <content><![CDATA[
+vector < int >adj[max];
+bool color[max];
+int level[max];
+void bfs (int src)
+{
+  queue < int >q;
+  q.push (src);
+  color[src] = true;
+  level[src] = false;
+  while (!q.empty ())
+    {
+      int curr = q.front ();
+      q.pop ();
+    for (auto child:adj[curr])
+    {
+      if (color[child] == 0)
+        {
+          q.push (child);
+          level[child] = level[curr] + 1;   // current node
+          color[child] = 1;
+        }
+    }
+    }
+}
+]]></content>
+  <tabTrigger>bfs</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,33 @@
+<snippet>
+  <content><![CDATA[
+bool vis[max][max];
+void dfs(int row, int col)
+{
+    stack<pair<int, int> > st;
+    st.push(make_pair(row, col));
+    while (!st.empty()) 
+    {
+        pair<int, int> curr = st.top();
+        st.pop();
+        int row = curr.first;
+        int col = curr.second;
+        if (!isValid(row, col))
+            continue;
+
+        vis[row][col] = true;
+       // cnt++;
+
+       for (int i = 0; i < 8; i++)
+        {
+            int adjx = row + dirx[i];
+            int adjy = col + diry[i];
+            st.push({ adjx, adjy });
+        }
+    }
+}
+]]></content>
+  <tabTrigger>dfs2d</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

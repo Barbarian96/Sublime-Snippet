@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+
+int dirx[8] = { -1, 0, 0, 1, -1, -1, 1, 1 };
+int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
+
+bool isValid(int row, int col)
+{
+    if (row < 0 || col < 0 || row >= ROW || col >= COL)
+        return false;
+    if (vis[row][col])
+        return false;
+    return true;
+}
+]]></content>
+  <tabTrigger>isValid</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

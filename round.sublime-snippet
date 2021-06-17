@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+int round(int x,int y)
+{
+	return ((x+y)/2)/y;
+}
+]]></content>
+  <tabTrigger>round</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

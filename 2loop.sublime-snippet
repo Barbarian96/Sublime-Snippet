@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+for(int i=0;i<n;i++)
+{
+	for(int j=0;j<n;j++)
+	{
+		
+	}
+}
+]]></content>
+  <tabTrigger>2loop</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
